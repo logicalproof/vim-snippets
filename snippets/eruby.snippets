@@ -84,6 +84,14 @@ snippet fields
 	<%= fields_for :${1:model}, @$1 do |${2:f}| %>
 		${0}
 	<% end %>
+snippet fwm
+	<%= form_with model: ${1} :do |f| %>
+		${0}
+	<% end %>
+snippet fwu
+	<%= form_with url: ${1} :do |f| %>
+		${0}
+	<% end %>
 snippet i18
 	I18n.t('${1:type.key}')
 snippet it
